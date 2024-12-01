@@ -11,6 +11,8 @@ Notes
 * `sim.py` contains code to read inD dataset as well as visualize through Pyglet.
 * `main.py` contains code to do constraint inference on the inD dataset.
 * `gridworld.py` contains code to do constraint inference on the Gridworld example from the MLCI paper.
+* `train_policy.py` trains the a neural network model to learn from the expert policy
+* `generate_demo_nn.py` creates demonstrations with the trained policy network.
 
 Workflow
 ========
@@ -24,3 +26,4 @@ Workflow
     * Visualize the constraints and the generated demonstrations (from the final MDP) by running `python3 -B sim.py --visualize --show_new_demos`.
     * (Optional) Produce GIF by running `python3 -B sim.py --create_gifs --show_new_demos`. This will create `demos.gif`.
 * To run the inD example in the multi-goal setting, run `sim.py` and `main.py` as in the previous step, but with `--multi_goal` flag as well.
+
